@@ -14,7 +14,7 @@ class Employee {
     return this.email;
   }
   getRole() {
-    return "Employee";
+    return "Employee";;
   }
 }
 const employee = new Employee('binaya Employee', 1, 'employee@test.com');
