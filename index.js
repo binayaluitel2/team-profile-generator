@@ -1,8 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const Engineer = require("./Engineer");
-const Intern = require("./Intern");
-const Manager = require("./Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const Manager = require("./lib/Manager");
 
 const employees = [];
 
@@ -93,7 +93,7 @@ function startHtml() {
         </nav>
         <div class="container " style="background:lightgray;">
             <div class="row">`;
-  fs.writeFile("./team.html", html, function (err) {
+  fs.writeFile("./team_profile/team.html", html, function (err) {
     if (err) {
       console.log(err);
     }
@@ -146,7 +146,7 @@ function addHtml(member) {
         </div>`;
     }
     console.log("adding team member");
-    fs.appendFile("./team.html", data, function (err) {
+    fs.appendFile("./team_profile/team.html", data, function (err) {
       if (err) {
         return reject(err);
       }
@@ -162,7 +162,7 @@ function finishHtml() {
 </body>
 </html>`;
 
-  fs.appendFile("./team.html", html, function (err) {
+  fs.appendFile("./team_profile/team.html", html, function (err) {
     if (err) {
       console.log(err);
     }
