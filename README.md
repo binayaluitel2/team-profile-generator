@@ -1,6 +1,9 @@
 ## Description 
    
-This is a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
+This is a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. This application uses [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. 
+
+
+ ![Output of team-profile-generator](team_profile.png)
 
   ## Table of Contents
   * [Installation](#installation)
@@ -11,7 +14,7 @@ This is a Node.js command-line application that takes in information about emplo
   
   ## Installation
     
-  Navigate inside the folder and run `node install`. This will install all the dependencies from package.json file.
+  Navigate inside the folder and run `npm install`. This will install all the dependencies from package.json file.
   
   ## Usage 
   
